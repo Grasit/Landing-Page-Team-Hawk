@@ -8,11 +8,32 @@
 .container{
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 10vh 1fr 10vh 1fr 10vh;
+  grid-template-rows: 10vh 1fr 1fr 10vh;
   grid-template-areas:
     "header header"
     "banner banner"
     "logo logo"
-    "form form"
+    "left-form right-form"
     "footer footer";
+}
+
+.banner{
+  grid-area: banner;
+}
+
+.form{
+  grid-area: form;
+}
+
+.right-form{
+  display: flex;
+  flex-direction: column;
+}
+
+label, input[type=text]{
+  width: 40%;
+}
+
+input[type=text]{
+  height: 3rem;
 }
