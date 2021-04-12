@@ -14,7 +14,7 @@
     "banner banner"
     "logo logo"
     "left-form right-form"
-    "footer footer";
+    "footer1 footer2";
 }
 
 .banner{
@@ -36,4 +36,18 @@ label, input[type=text]{
 
 input[type=text]{
   height: 3rem;
+}
+/* .copyright{
+grid-area: footer1;
+}
+.social_icons{
+  grid-area: footer2;
+} */
+.footer{
+  display: flex;
+  background: lightcoral;
+  width: 100% !important;
+}
+.copyright{
+  float: left;
 }
