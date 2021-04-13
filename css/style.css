@@ -11,15 +11,87 @@
   grid-template-columns: 50% 50%;
   grid-template-rows: 10vh 1fr 1fr 10vh;
   grid-template-areas:
-    "header header"
+    "nav-header nav-header"
     "banner banner"
     "logo logo"
     "left-form right-form"
     "footer1 footer2";
 }
 
+.nav-header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  padding: 0.6rem 7rem;
+}
+
+.nav-header > div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo{
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+  background-color: #f2f2f2;
+}
+
+.logo > ul{
+  display: flex;
+  list-style-type: none;
+}
+
+.logo li{
+  margin-right: 1.5rem;
+}
+
+.logo button{
+  padding: 0.8rem 2rem;
+  background-color: #2D9CDB;
+  color: white;
+  border: none;
+  border-radius: 1.5rem;
+}
+
 .banner{
   grid-area: banner;
+  background-image: linear-gradient(326.21deg, #594CC3 12.45%, #2B8AEB 99.19%);
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  color: white;
+}
+
+.main-contents{
+  width: 40%;
+  margin-top: 3rem;
+  margin-left: 4rem;
+}
+
+.main-contents > h1{
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  line-height: 6rem;
+}
+
+.main-contents > p{
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.main-contents  span{
+  font-weight: bold;
+}
+.main-contents > button{
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
+  border: none;
+}
+
+.main-contents :nth-child(4){
+  background-color: #104079;
+  color: white;
 }
 
 .form{
@@ -29,6 +101,7 @@
 .main{
   padding: 20px;
 }
+
 .left-form{
   display: flex;
   flex-direction: column;
@@ -61,18 +134,17 @@
   padding: 3rem;
 }
 
-/*input[type=text]{*/
-/*  width: 35%;*/
-/*}*/
 
 input[type=text]{
   height: 3rem;
+  border: 1px solid #ccc;
 }
 
 textarea, input[type=email]{
   width: 100%;
   height: 3rem;
   background-color: white;
+  border: 1px solid #ccc;
 }
 .form-contents > div {
   display: flex;
@@ -88,12 +160,18 @@ div > span{
 .signin{
   display: flex;
   justify-content: space-between;
- margin-left: 37rem;
+ margin-left: 34rem;
+  margin-top: 1rem;
 }
 
 .signin > button{
-  padding: 1rem;
-  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  padding: 0.5rem 2rem;
+  margin-left: 0.2rem;
+  background-image: linear-gradient(326.21deg, #594CC3 12.45%, #2B8AEB 99.19%);
+  color: white;
+  border: none;
+
+  /*background:  linear-gradient(326.21deg, #594CC3 12.45%, #2B8AEB 99.19%);*/
 }
 
 /* .copyright{
@@ -104,10 +182,12 @@ grid-area: footer1;
 } */
 .footer{
   display: flex;
-  background: lightcoral;
-  width: 100% !important;
+  justify-content: space-between;
+  /*background: lightcoral;*/
+  width: 100% ;
+  margin-top: 1rem;
 }
-.copyright{
-  float: left;
-}
+/*.copyright{*/
+/*  float: left;*/
+/*}*/
 
