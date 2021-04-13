@@ -15,7 +15,7 @@
     "banner banner"
     "logo logo"
     "left-form right-form"
-    "footer footer";
+    "footer1 footer2";
 }
 
 .banner{
@@ -94,5 +94,20 @@ div > span{
 .signin > button{
   padding: 1rem;
   background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+
+/* .copyright{
+grid-area: footer1;
+}
+.social_icons{
+  grid-area: footer2;
+} */
+.footer{
+  display: flex;
+  background: lightcoral;
+  width: 100% !important;
+}
+.copyright{
+  float: left;
 }
 
